@@ -47,7 +47,7 @@ torch.setdefaulttensortype('torch.FloatTensor')
 
 opt.netG_name ='net_G'
 
-local data_loader = paths.dofile('data/data.lua')
+local data_loader = paths.dofile('utilities/data/data.lua')
 print('#threads...' .. opt.nThreads)
 
 local data = data_loader.new(opt.nThreads, opt)
